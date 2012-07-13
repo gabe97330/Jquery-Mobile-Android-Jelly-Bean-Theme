@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQM Android Jelly Bean theme by Johan Kivi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="js/jquery.mobile-1.0.1.min.js"></script>
+<link href="css/jquery.mobile.structure-1.0.1.min.css" type="text/css" rel="stylesheet">
+<link href="css/jquery.mobile.androidtheme.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Page1 -->
+
+<div data-role="page" id="page1">
+  <div data-role="header"><span class="topbar">Introduction</span></div>
+  <div data-role="content">
+    <img src="images/jellybean-intro.png" />
+    <h1>Well, hello there!</h1>
+    <p>To be frank, I am a apple fanboy. I never owned a android device, hell Ive bearly touched one! But since the introduction of Sandwich Icecream (4.0) I really like the new design. I have started to experiment with the amazing <a href="http://www.jquerymobile.com" target="_blank">Jquery mobile framework</a> and wanted to create some nice looking Android themed apps, so here it is.</p> 
+    <p>I am a fair frontend designer, not a great one. So this theme is not proper coded. My priority have been to stay true to the <a href="http://developer.android.com/design/index.html" target="_blank">android design guidelines</a>, not all the functionality of a JQM theme. Therefore you need to have a good look at the code of this file since Ive made a few custom css-classes.</p>
+    <p>As you may have noticed by now, this theme is the <em>Holo Light</em> version. The Holo Dark version will be produced when Holo Light version is complete!</p>
+    <p>You may alter, extend, share and do what ever you like with this theme.</p>
+    <p>Cheers!<p> 
+    <p>//  <a href="mailto:johan.keyv@gmail.com" alt="Email me!">Johan Kivi</a></p>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#page1" class="ui-btn-active">Intro</a></li>
+      <li><a href="#page2">Listsviews</a></li>
+      <li><a href="#page3">Forms</a></li>
+      <li><a href="#page4">Contacts</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Page2 -->
+
+<div data-role="page" id="page2">
+  <div data-role="header"><a href="#" class="ui-btn-left" data-rel="back"></a><span class="topbar">Listviews</span></div>
+  <div data-role="content">
+    <h1>Listviews</h1>
+    <p>Here are a few of the most common listviews in Android 4+.</p>
+    <ul data-role="listview">
+      <li data-role="list-divider">Single line list</li>
+      <li><a href="#" class="ui-btn-right">List item 1</a></li>
+      <li><a href="#" class="ui-btn-right">List item 2</a></li>
+      <li><a href="#" class="ui-btn-right">List item 3</a></li>
+      <li><a href="#" class="ui-btn-right">List item 4</a></li>
+    </ul>
+    <ul data-role="listview">
+      <li data-role="list-divider">Double line list</li>
+      <li><a href="#">
+        <h3 class="ui-li-heading">List item 1</h3>
+        <p class="ui-li-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a></li>
+      <li><a href="#">
+        <h3 class="ui-li-heading">List item 2</h3>
+        <p class="ui-li-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a></li>
+      <li><a href="#">
+        <h3 class="ui-li-heading">List item 3</h3>
+        <p class="ui-li-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a></li>
+      <li><a href="#">
+        <h3 class="ui-li-heading">List item 4</h3>
+        <p class="ui-li-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a> </li>
+    </ul>
+    <ul data-role="listview">
+      <li data-role="list-divider">Count list</li>
+      <li><a href="#">List item 1<span class="ui-li-counter">3</span></a></li>
+      <li><a href="#">List item 2<span class="ui-li-counter">666</span></a></li>
+      <li><a href="#">List item 3<span class="ui-li-counter">12</span></a></li>
+      <li><a href="#">List item 4<span class="ui-li-counter">3</span></a></li>
+    </ul>
+    <a href="#" data-role="button">A Button</a> </div>
+  <div data-role="navbar">
+    <ul>
+    <li><a href="#page1">Intro</a></li>
+      <li><a href="#page2" class="ui-btn-active">Listsviews</a></li>
+      <li><a href="#page3">Forms</a></li>
+      <li><a href="#page4">Contacts</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Page3 -->
+
+<div data-role="page" id="page3">
+  <div data-role="header"><a href="#" class="ui-btn-left" data-rel="back"></a><span class="topbar">Forms</span></div>
+  <div data-role="content">
+    <h1>Forms</h1>
+    <p>The forms are still in development.</p>
+    <form action="#" method="get">
+      <div data-role="fieldcontain">
+        <label for="textinput">Name:</label>
+        <input type="text" name="textinput" id="textinput" value=""  />
+        <label for="textinput">Phone number:</label>
+        <input type="text" name="textinput" id="textinput" value=""  />
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <input type="checkbox" name="checkbox" id="checkbox_0" class="custom" value="" />
+          <label for="checkbox_0">Option 1</label>
+          <input type="checkbox" name="checkbox" id="checkbox_1" class="custom" value="" />
+          <label for="checkbox_1">Option 2</label>
+          <input type="checkbox" name="checkbox" id="checkbox_2" class="custom" value="" />
+          <label for="checkbox_2">Option 3</label>
+        </fieldset>
+      </div>
+    </form>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#page1">Intro</a></li>
+      <li><a href="#page2">Listsviews</a></li>
+      <li><a href="#page3" class="ui-btn-active">Forms</a></li>
+      <li><a href="#page4">Contacts</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Page4 -->
+
+<div data-role="page" id="page4">
+  <div data-role="header" class="contact"><a href="#" class="ui-btn-left" data-rel="back"></a><span class="topbar">Contacts</span>
+    <ul class="contacts">
+      <li><a href="#" class="search"></a></li>
+      <li><a href="#" class="adduser"></a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" class="contactlist">
+      <li><a href="#">
+      	<img src="images/contactex-1.png" class="user" alt=""/>
+        <h3 class="ui-li-heading">My best mate!</h3>
+        <p class="ui-li-desc"><span class="email"></span>myemail@emailcompany.com</p>
+        <span class="video"></span></a></li>
+        <li><a href="#">
+      	<img src="images/contactex-2.png" class="user" alt=""/>
+        <h3 class="ui-li-heading">Also a good friend</h3>
+        <p class="ui-li-desc"><span class="email"></span>myemail@emailcompany.com</p>
+        </a></li>
+        <li><a href="#">
+      	<img src="images/contactex-3.png" class="user" alt=""/>
+        <h3 class="ui-li-heading">Dont quite remember</h3>
+        <p class="ui-li-desc"><span class="email"></span>myemail@emailcompany.com</p>
+        </a></li>
+        <li><a href="#">
+      	<img src="images/contactex-4.png" class="user" alt=""/>
+        <h3 class="ui-li-heading">Sister Sistersson</h3>
+        <p class="ui-li-desc"><span class="email"></span>myemail@emailcompany.com</p>
+        <span class="video"></span></a></li>
+        <li><a href="#">
+      	<img src="images/contact-nopic.png" class="user" alt=""/>
+        <h3 class="ui-li-heading">Contact Contactsson</h3>
+        <p class="ui-li-desc"><span class="email"></span>myemail@emailcompany.com</p>
+        </a></li>
+        <li><a href="#">
+      	<img src="images/contact-nopic.png" class="user" alt=""/>
+        <h3 class="ui-li-heading">Contact Contactsson</h3>
+        <p class="ui-li-desc"><span class="email"></span>myemail@emailcompany.com</p>
+        </a></li>
+      
+    </ul>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#page1">Intro</a></li>
+      <li><a href="#page2">Listsviews</a></li>
+      <li><a href="#page3">Forms</a></li>
+      <li><a href="#page4" class="ui-btn-active">Contacts</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
